@@ -1,0 +1,14 @@
+{
+  "name": "cybergroupmate-skills",
+  "version": "1.0.0",
+  "description": "Dynamic TS Skills for CyberGroupmate Sandbox",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tavily/core": "^0.7.2",
+    "octokit": "^5.0.5"
+  }
+}
