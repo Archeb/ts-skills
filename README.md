@@ -1,8 +1,8 @@
-# CyberGroupmate TS Skills
+# TS Skills
 
 > **Vision: "Make the entire npm your skill library through progressive disclosure and JSDoc."**
 
-This is the central repository for **TS Skills** — dynamic, pure worker modules designed to extend the capabilities of the CyberGroupmate AI Agent. 
+This is the central repository for **TS Skills** — dynamic, pure worker modules designed to extend the capabilities of the AI Agent. 
 
 Thanks to our Two-Pass Code Generation Architecture, you don't need complicated LLM tool declarations or heavy JSON Schemas. You just write normal TypeScript JSDoc, and the system dynamically feeds your documentation to the LLM exactly when it intends to use your skill.
 
@@ -37,7 +37,6 @@ workspace/skills/
 1. Fork or clone this repository directly into `workspace/skills/`.
 2. Do `npm install` to add any third-party SDKs required by your skill.
 3. Write your `index.ts` and `d.ts`.
-4. Run `npm run gen:module-docs` at the CyberGroupmate root to re-index the dictionary.
 
 Your skill is now permanently integrated!
 
