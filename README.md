@@ -28,9 +28,9 @@ workspace/skills/
 ├── tracemoe/               # Anime screenshot search
 ├── weather/                # Global weather checking (No API Key)
 ├── qrcode/                 # QR code generator
-├── schedule/               # Future reminder/cron system
 ├── saucenao/               # Anime illustrator sourcing
 ├── finance/                # Real-time stock & crypto tracker
+├── playwright/             # Browser automation with Playwright
 └── package.json            # Contains your node_modules
 ```
 
@@ -60,14 +60,14 @@ Fetches real-time weather and forecast for any global city. Powered by `weather-
 ### 📱 QRCode (二维码生成)
 Converts any given text or URL to a base64 QRCode image pure-programmatically.
 
-### ⏰ Schedule (定时器与闹钟)
-Allows the LLM to schedule future reminders in memory. Useful for creating daily reminders for users.
-
 ### 🎨 SauceNAO (插画师溯源)
 Reverse-image searches anime art against Pixiv, Twitter, and Booru to find original illustrators. Requires an API key.
 
 ### 📈 Finance (实时金融行情)
 Queries real-time stock, crypto, and currency prices using the official Yahoo Finance engine. Completely free, no API key required.
+
+### 🎭 Playwright (浏览器自动化)
+Full Playwright browser automation — navigate, interact, scrape, screenshot, generate PDFs, and more. Supports Chromium, Firefox, and WebKit. Configurable via `PLAYWRIGHT_MCP_*` environment variables. No API key required.
 
 ---
 
@@ -75,7 +75,7 @@ Queries real-time stock, crypto, and currency prices using the official Yahoo Fi
 
 Most skills in this demonstration pack work entirely offline or do not require an API key, allowing any user who forks / clones the project to instantly enjoy a fully-armed agent.
 
-- **No API Key Required**: `tracemoe`, `weather`, `qrcode`, `schedule`, `finance`
+- **No API Key Required**: `tracemoe`, `weather`, `qrcode`, `finance`
 - **API Key Required**:
   - **SauceNAO** (`SAUCENAO_API_KEY`): 
     Register for a free account at [SauceNAO](https://saucenao.com/user.php?page=search-api). The free tier grants 200 high-accuracy searches per day, perfect for private scenarios. If not provided, this engine will be disabled.
