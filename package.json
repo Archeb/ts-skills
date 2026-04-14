@@ -9,11 +9,9 @@
   },
   "dependencies": {
     "@tavily/core": "^0.7.2",
-    "@types/node-schedule": "^2.1.8",
     "@types/qrcode": "^1.5.6",
     "jimp": "^1.6.0",
     "jsqr": "^1.4.0",
-    "node-schedule": "^2.1.1",
     "octokit": "^5.0.5",
     "qrcode": "^1.5.4",
     "sagiri": "^4.3.0",
