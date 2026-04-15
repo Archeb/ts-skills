@@ -50,13 +50,11 @@ declare const playwright: {
      * await page.waitForURL("<star><star>/dashboard");
     *
      * @example 提取页面数据
-    * const page = await playwright.getPage();
+     * const page = await playwright.getPage();
      * await page.goto("https://example.com/data");
-     * const items = await page.$$eval(".item", els => els.map(el => ({
-        *     title: el.querySelector("h2")?.textContent,
-     * link: el.querySelector("a")?.href,
-     * })));
-     * console.log(items);
+     * // 使用 ariaSnapshot 提取页面的无障碍树作为结构化 YAML 返回
+     * const snapshot = await page.locator("body").ariaSnapshot();
+     * console.log(snapshot);
      */
     getPage(): Promise<import("playwright").Page>;
 
